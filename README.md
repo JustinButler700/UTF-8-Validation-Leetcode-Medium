@@ -16,11 +16,16 @@ This is how the UTF-8 encoding would work:
 
      Number of Bytes   |        UTF-8 Octet Sequence
                        |              (binary)
+                       |
    --------------------+-----------------------------------------
             1          |   0xxxxxxx
+ 
             2          |   110xxxxx 10xxxxxx
+            
             3          |   1110xxxx 10xxxxxx 10xxxxxx
+            
             4          |   11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+            
 x denotes a bit in the binary form of a byte that may be either 0 or 1.
 
 Note: The input is an array of integers. Only the least significant 8 bits of each integer is used to store the data. This means each integer represents only 1 byte of data.

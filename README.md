@@ -18,6 +18,7 @@ This is how the UTF-8 encoding would work:
                        |              (binary)
                        |
    --------------------+-----------------------------------------
+   
             1          |   0xxxxxxx
  
             2          |   110xxxxx 10xxxxxx

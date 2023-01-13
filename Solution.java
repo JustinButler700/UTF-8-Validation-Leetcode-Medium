@@ -30,7 +30,6 @@ class Solution {
             } else {
                 //Followed by n-1 bytes with the most significant 2 bits being 10.
                 if (i >> 6 == 0b10) {
-                    //Each neighboring UTF-8 data will be 1 byte less than the first
                     bytes--;
                 } else {
                     return false;
